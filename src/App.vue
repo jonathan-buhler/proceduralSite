@@ -1,30 +1,37 @@
 <template>
     <div id="app">
-        <div><img alt="Vue logo" src="./assets/logo.png" /> <HelloWorld msg="Welcome to Your Vue.js App" /></div>
-        <div><ColorBox msg="Hello!" /></div>
+        <doughnut-container
+            v-for="(chart, index) in chartConfig"
+            :key="index"
+            :labels="chart.labels"
+            :color="chart.color"
+            :datasets="chart.data"
+        />
     </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
-import ColorBox from './components/ColorBox.vue';
+import DoughnutContainer from "./components/DoughnutContainer.vue";
+import chartConfig from "./data/config.json";
 
 export default {
-    name: 'app',
+    name: "app",
+    data() {
+        return {
+            chartConfig: chartConfig
+        };
+    },
     components: {
-        HelloWorld,
-        ColorBox
+        DoughnutContainer
     }
 };
 </script>
 
 <style>
 #app {
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </style>

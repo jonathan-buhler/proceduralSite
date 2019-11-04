@@ -1,0 +1,12 @@
+{
+    "chart0": {
+        "labels": ["Data", "data (but lowercase)", "atad (but backwards)"],
+        "color": ["blue", "green", "pink"],
+        "data": [15, 8, 20]
+    },
+    "chart1": {
+        "labels": ["Other data", "Even more data"],
+        "color": ["orange", "red"],
+        "data": [5, 21]
+    }
+}
