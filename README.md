@@ -6,7 +6,7 @@
 -   Charts can be customized
 
 ## Startup
-Prerequisites: Yarn must be installed on your system
+Prerequisites: Yarn must be installed on your system  
 To launch:
 ```
 yarn install
