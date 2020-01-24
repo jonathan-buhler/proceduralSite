@@ -7,6 +7,6 @@
     "chart1": {
         "labels": ["Other data", "Even more data"],
         "color": ["orange", "red"],
-        "data": [5, 21]
+        "data": [5, 22]
     }
 }
